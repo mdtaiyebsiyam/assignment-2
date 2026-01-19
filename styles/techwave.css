@@ -141,9 +141,9 @@ main .divider {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 190px;
+  gap: 20px;
   text-align: center;
-  padding-left: 280px;
+  padding-left: 400px;
   padding-bottom: 80px;
 }
 .the-podcast .divider-section h2 {
@@ -152,6 +152,128 @@ main .divider {
 }
 .the-podcast .divider-section p {
   color: white;
+  font-weight: lighter;
+}
+main .why-choose-techwave {
+  max-width: 1600px;
+  max-height: 1121px;
+  background-color: #230e3d;
+}
+main .why-choose-techwave h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.7rem;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+.why-choose-techwave .choose-container {
+  max-width: 1200px;
+  max-height: 783px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 300px);
+}
+.why-choose-techwave .choose-container .first-layout {
+  grid-column: span 1;
+  grid-row: span 2;
+  color: white;
+  width: 380px;
+  height: 470px;
+  background-color: #351165;
+  border-radius: 40px;
+  margin-left: 350px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.why-choose-techwave .choose-container .first-layout h3 {
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.why-choose-techwave .choose-container .first-layout p {
+  font-weight: lighter;
+}
+.why-choose-techwave .choose-container .second-layout {
+  grid-column: span 2;
+  grid-row: span 1;
+  color: white;
+  max-width: 790px;
+  max-height: 225px;
+  background-color: #351165;
+  text-align: left;
+  border-radius: 40px;
+  padding: 50px 20px;
+}
+.why-choose-techwave .choose-container .second-layout h3 {
+  font-size: 2rem;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+.why-choose-techwave .choose-container .second-layout p {
+  font-weight: lighter;
+}
+.why-choose-techwave .choose-container .third-layout {
+  grid-column: span 2;
+  grid-row: span 1;
+  color: white;
+  margin-top: -75px;
+  max-width: 790px;
+  max-height: 224px;
+  background-color: #351165;
+  text-align: left;
+  border-radius: 40px;
+  padding: 50px 20px;
+}
+.why-choose-techwave .choose-container .third-layout h3 {
+  font-size: 2rem;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+.why-choose-techwave .choose-container .third-layout p {
+  font-weight: lighter;
+}
+.why-choose-techwave .choose-container .fourth-layout {
+  grid-column: span 2;
+  grid-row: span 2;
+  max-width: 710px;
+  max-height: 224px;
+  background-color: #351165;
+  color: white;
+  border-radius: 40px;
+  margin-left: 350px;
+  margin-top: -150px;
+  padding: 10px 20px;
+}
+.why-choose-techwave .choose-container .fourth-layout h3 {
+  padding-bottom: 5px;
+  font-size: 2rem;
+  font-size: 1.8rem;
+}
+.why-choose-techwave .choose-container .fourth-layout p {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.why-choose-techwave .choose-container .fifth-layout {
+  grid-column: span 1;
+  grid-row: span 1;
+  max-width: 380px;
+  max-height: 225px;
+  background-color: #351165;
+  color: white;
+  border-radius: 40px;
+  margin-top: -150px;
+  padding-top: 45px;
+  padding-left: 20px;
+}
+.why-choose-techwave .choose-container .fifth-layout h3 {
+  padding-top: 4px;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+.why-choose-techwave .choose-container .fifth-layout p {
+  font-size: 0.8rem;
   font-weight: lighter;
 }
 
@@ -172,6 +294,7 @@ main .divider {
   .navbar .menu {
     display: flex;
     margin-right: -170px;
+    list-style: none;
   }
   .header-container {
     max-width: 576px;
@@ -198,34 +321,99 @@ main .divider {
     padding-top: 15px;
   }
   .about-podcast h2 {
-    text-align:justify;
+    text-align: center;
     font-size: 1.6rem;
-    margin-right: 100px;
+    margin-right: 135px;
   }
   .about-podcast p {
     text-align: center;
-    font-size: .8rem;
-    margin-right: 110px;
+    font-size: 0.8rem;
+    margin-right: 135px;
     padding: -10px;
   }
-   .about-podcast .p-2{
+  .about-podcast .p-2 {
     margin-top: -20px;
     padding-bottom: 10px;
-   }
+  }
   main .divider {
     padding: 50px 50px;
     margin-top: -40px;
   }
   .the-podcast .divider-section {
-    max-width: 576px;
-    gap: 180px;
     grid-template-columns: repeat(2, 1fr);
     font-size: 1rem;
-    grid-template-rows: 10px;
-
+    gap: 130px;
+    align-items: center;
   }
   .the-podcast .divider-section .rating {
-    margin-left: -290px;
+    margin-left: -390px;
     margin-top: -30px;
+  }
+  main .why-choose-techwave h2 {
+    font-size: 1.5rem;
+  }
+  .why-choose-techwave .choose-container {
+    max-width: 575px;
+    max-height: 1450px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .why-choose-techwave .choose-container .first-layout {
+    margin-left: 95px;
+    padding: 30px 20px;
+    height: 220px;
+  }
+  .why-choose-techwave .choose-container .first-layout h3 {
+    font-size: 1rem;
+  }
+  .why-choose-techwave .choose-container .first-layout p {
+    font-size: 0.9rem;
+  }
+  .why-choose-techwave .choose-container .second-layout {
+    margin: 90px 95px;
+    margin-top: -390px;
+    height: 180px;
+    padding: 30px 20px;
+  }
+  .why-choose-techwave .choose-container .second-layout h3 {
+    font-size: 1rem;
+  }
+  .why-choose-techwave .choose-container .second-layout p {
+    font-size: 0.9rem;
+  }
+  .why-choose-techwave .choose-container .third-layout {
+    margin: 90px 95px;
+    margin-top: -500px;
+    height: 180px;
+    padding: 30px 20px;
+  }
+  .why-choose-techwave .choose-container .third-layout h3 {
+    font-size: 1rem;
+  }
+  .why-choose-techwave .choose-container .third-layout p {
+    font-size: 0.9rem;
+  }
+  .why-choose-techwave .choose-container .fourth-layout {
+    margin: 90px 95px;
+    margin-top: -500px;
+    height: 300px;
+    padding: 0px 20px;
+  }
+  .why-choose-techwave .choose-container .fourth-layout h3 {
+    font-size: 1rem;
+  }
+  .why-choose-techwave .choose-container .fourth-layout p {
+    font-size: 0.8rem;
+  }
+    .why-choose-techwave .choose-container .fifth-layout {
+    margin: 90px 95px;
+    margin-top: -285px;
+    height: 180px;
+    padding: 30px 20px;
+  }
+  .why-choose-techwave .choose-container .fifth-layout h3 {
+    font-size: 1rem;
+  }
+  .why-choose-techwave .choose-container .fifth-layout p {
+    font-size: 0.9rem;
   }
 }
