@@ -198,25 +198,34 @@ main .divider {
     padding-top: 15px;
   }
   .about-podcast h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-right: 140px;
+    text-align:justify;
+    font-size: 1.6rem;
+    margin-right: 100px;
   }
   .about-podcast p {
-    font-size: 0.9rem;
-    margin-right: 145px;
+    text-align: center;
+    font-size: .8rem;
+    margin-right: 110px;
+    padding: -10px;
   }
+   .about-podcast .p-2{
+    margin-top: -20px;
+    padding-bottom: 10px;
+   }
   main .divider {
     padding: 50px 50px;
+    margin-top: -40px;
   }
   .the-podcast .divider-section {
     max-width: 576px;
-    gap: 15px;
+    gap: 180px;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 1rem;
+    grid-template-rows: 10px;
 
   }
   .the-podcast .divider-section .rating {
-    margin-left: -270px;
-    justify-content: space-between;
+    margin-left: -290px;
+    margin-top: -30px;
   }
 }
