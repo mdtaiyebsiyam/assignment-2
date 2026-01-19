@@ -40,6 +40,7 @@
   font-weight: 500;
   color: white;
   margin: 36.5px;
+  font-weight: lighter;
 }
 .navbar button {
   color: white;
@@ -88,6 +89,7 @@
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 24px;
+  font-weight: lighter;
 }
 .header-content button {
   padding-left: 90px;
@@ -106,6 +108,53 @@
   background-color: transparent;
   border-color: #00ff88;
 }
+main .the-podcast {
+  max-width: 1600px;
+  max-height: 646px;
+  background-color: #1a0b2e;
+}
+main .about-podcast {
+  max-width: 1200px;
+  padding-left: 24%;
+  align-items: center;
+  text-align: center;
+}
+.about-podcast h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.about-podcast p {
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.about-podcast .p-1 {
+  margin-bottom: 40px;
+}
+main .divider {
+  padding: 60px 200px;
+  opacity: 0.1;
+}
+.the-podcast .divider-section {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 190px;
+  text-align: center;
+  padding-left: 280px;
+  padding-bottom: 80px;
+}
+.the-podcast .divider-section h2 {
+  color: #00ff88;
+  font-size: 3rem;
+}
+.the-podcast .divider-section p {
+  color: white;
+  font-weight: lighter;
+}
+
 @media screen and (max-width: 576px) {
   .navbar {
     max-width: 576px;
@@ -124,18 +173,50 @@
     display: flex;
     margin-right: -170px;
   }
-  .header-container{
+  .header-container {
     max-width: 576px;
     background-size: 576px 576px;
     background-repeat: no-repeat;
   }
   .header-container .microphone-photo {
-  background-position: center;
-  padding: 100px 100px;
-}
-.header-container .header-content h1{
-  padding-top: 90px;
-}
-.header-container .header-content h1{
-}
+    background-position: center;
+    padding: 100px 100px;
+  }
+  .header-container .header-content h1 {
+    padding-top: 90px;
+    font-size: 2rem;
+  }
+  .header-container .header-content p {
+    font-size: 0.85rem;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  main .the-podcast {
+    max-width: 576px;
+    max-height: 576px;
+    margin-top: -190px;
+    padding-top: 15px;
+  }
+  .about-podcast h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 140px;
+  }
+  .about-podcast p {
+    font-size: 0.9rem;
+    margin-right: 145px;
+  }
+  main .divider {
+    padding: 50px 50px;
+  }
+  .the-podcast .divider-section {
+    max-width: 576px;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  .the-podcast .divider-section .rating {
+    margin-left: -270px;
+    justify-content: space-between;
+  }
 }
