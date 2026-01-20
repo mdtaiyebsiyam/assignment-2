@@ -8,6 +8,15 @@
   font-optical-sizing: auto;
 }
 /* shared css */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@keyframes glow {
+  from { box-shadow: 0 0 10px #5edd3f; }
+  to   { box-shadow: 0 0 20px #54f05c; }
+}
 .display-flex {
   display: flex;
 }
@@ -47,7 +56,7 @@
   font-weight: lighter;
   text-decoration: none;
 }
-.navbar button {
+.navbar button{
   color: white;
   background-image: linear-gradient(#9100f8, #fb09b4, #f7e93f);
   width: 135px;
@@ -55,7 +64,13 @@
   border-radius: 10000px;
   border: none;
   margin: 24px;
+  cursor: pointer;
+  animation: glow 0.5s infinite alternate;
 }
+.navbar button:hover{
+  transform: scale(1.15);
+}
+
 .header-container {
   max-width: 1600px;
   height: 760px;
@@ -80,6 +95,8 @@
   text-align: center;
   margin-top: -80px;
   margin-left: 10px;
+  animation: pulse 1s infinite;
+
 }
 .header-container .header-content h1 {
   color: white;
@@ -411,10 +428,11 @@ main .meet-the-host .host-name {
   justify-content: center;
   margin-bottom: 50px;
 }
-.footer-images{
+.footer-images {
   gap: 10px;
   font-weight: lighter;
 }
+
 @media screen and (max-width: 576px) {
   .navbar {
     max-width: 576px;
@@ -423,6 +441,7 @@ main .meet-the-host .host-name {
   .nav-link,
   .btn-0 {
     display: none;
+    
   }
   .header .navbar .h1 {
     margin: 0 auto;
@@ -607,7 +626,7 @@ main .meet-the-host .host-name {
     background-position: center;
     background-size: contain;
   }
-  .footer-link{
-    gap:9px;
+  .footer-link {
+    gap: 9px;
   }
 }
