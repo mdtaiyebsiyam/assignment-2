@@ -19,13 +19,13 @@
   padding: 24px 200px;
   background-color: #1a0b2e;
 }
-.navbar .h1 {
+.h1 {
   color: white;
   font-size: 2rem;
   font-weight: 219px;
   margin: 30px;
 }
-.navbar .span {
+.span {
   background: -webkit-linear-gradient(#9100f8, #fb09b4, #f7e93f);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -384,6 +384,37 @@ main .meet-the-host .host-name {
   border-radius: 100px;
 }
 
+.footer-section {
+  max-width: 1600px;
+  max-height: 412px;
+  text-align: center;
+  justify-content: space-between;
+  background-image: url(../assets/footer-bg.png);
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-weight: lighter;
+}
+.footer-section .footer-name {
+  font-size: 3rem;
+  font-weight: 219px;
+  margin: 30px;
+}
+.footer-section .footer-span {
+  background: -webkit-linear-gradient(#9100f8, #fb09b4, #f7e93f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-link {
+  gap: 55px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.footer-images{
+  gap: 10px;
+  font-weight: lighter;
+}
 @media screen and (max-width: 576px) {
   .navbar {
     max-width: 576px;
@@ -570,5 +601,13 @@ main .meet-the-host .host-name {
   .host-container p {
     font-size: 0.7rem;
     padding-bottom: 5px;
+  }
+  .footer-section {
+    background-image: url(../assets/image2.png);
+    background-position: center;
+    background-size: contain;
+  }
+  .footer-link{
+    gap:9px;
   }
 }
