@@ -33,14 +33,19 @@
 .navbar .menu {
   display: none;
 }
-.nav-link {
+.nav-link li {
   list-style: none;
-  gap: 32px;
+  align-items: center;
+  padding-top: 40px;
+}
+.nav-link a {
+  gap: 20px;
   font-size: 1rem;
   font-weight: 500;
   color: white;
   margin: 36.5px;
   font-weight: lighter;
+  text-decoration: none;
 }
 .navbar button {
   color: white;
@@ -61,7 +66,7 @@
   background-image: url(../assets/hero-circle.png);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 200px 200px;
+  padding: 180px 180px;
 }
 .microphone-photo span {
   color: black;
@@ -276,6 +281,108 @@ main .why-choose-techwave h2 {
   font-size: 0.8rem;
   font-weight: lighter;
 }
+main .the-episodes {
+  max-width: 1600px;
+  height: 1276px;
+  background-color: #1a0b2e;
+  padding-left: 335px;
+}
+.cards-featured {
+  gap: 20px;
+}
+.the-episodes h3 {
+  font-size: 3rem;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-right: 400px;
+}
+.card-episodes {
+  width: 280px;
+  height: 350px;
+  /* border: 1px solid red; */
+  background-color: #250d44;
+  color: white;
+  border-radius: 20px;
+}
+.card-episodes iframe {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-episodes h4 {
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+.card-episodes p {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.clock-min {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+  gap: 5px;
+  color: #00ff88;
+  font-weight: bold;
+}
+.clock-min p {
+  padding-bottom: 10px;
+}
+main .meet-the-host .host-name {
+  font-size: 3rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.host-container {
+  gap: 24px;
+  max-width: 896px;
+  max-height: 280px;
+  background-color: #351165;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 40px;
+}
+.host-container h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.host-container p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+.host-container .social-link .image-link {
+  gap: 20px;
+}
+.host-container .social-link li {
+  list-style: none;
+  align-items: center;
+  padding-top: 10px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.social-link {
+  gap: 5px;
+}
+.social-link .images-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border: 1px solid #533c72;
+  border-radius: 100px;
+}
 
 @media screen and (max-width: 576px) {
   .navbar {
@@ -404,7 +511,7 @@ main .why-choose-techwave h2 {
   .why-choose-techwave .choose-container .fourth-layout p {
     font-size: 0.8rem;
   }
-    .why-choose-techwave .choose-container .fifth-layout {
+  .why-choose-techwave .choose-container .fifth-layout {
     margin: 90px 95px;
     margin-top: -285px;
     height: 180px;
@@ -415,5 +522,53 @@ main .why-choose-techwave h2 {
   }
   .why-choose-techwave .choose-container .fifth-layout p {
     font-size: 0.9rem;
+  }
+  main .the-episodes {
+    max-width: 576px;
+    max-height: 1936px;
+  }
+  .cards-featured {
+    flex-direction: column;
+    margin-left: -220px;
+  }
+  .the-episodes h3 {
+    font-size: 1.5rem;
+    margin-left: -90px;
+  }
+  .card-episodes {
+    width: 360px;
+    height: 240px;
+  }
+  .card-episodes iframe {
+    width: 360px;
+    height: 140px;
+  }
+  .card-episodes h4 {
+    padding-top: 5px;
+    font-size: 1rem;
+  }
+  .card-episodes p {
+    font-size: 0.6rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  main .meet-the-host .host-name {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-top: -70px;
+  }
+  .host-container {
+    margin-left: -340px;
+    margin-top: -30px;
+    /* flex-direction: column; */
+  }
+  .host-container h4 {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    padding-top: 30px;
+  }
+  .host-container p {
+    font-size: 0.7rem;
+    padding-bottom: 5px;
   }
 }
